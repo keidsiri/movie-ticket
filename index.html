@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Movie Ticket</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Epicodus Movie theater! Buy your tickets here!</h1>
+    <div class="row">
+      <div class="col-lg-6">
+        <form id="ticket">
+          <div class="form-group">
+            <label for="movies">Movies</label>
+            <select class="form-control" id="movies">
+              <option value="true">Dune</option>
+              <option value="true">Chang-Chi</option>
+              <option value="true">Free Guy</option>
+              <option value="false">The Santa Clause</option>
+              <option value="false">Nightmare Before Christmas</option>
+              <option value="false">A Christmas Carol</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="time">Please select the time of the movie</label>
+            <select class="form-control" id="time">
+              <option value="1">1:00pm</option>
+              <option value="2">2:30pm</option>
+              <option value="4">4:00pm</option>
+              <option value="5">5:30pm</option>
+              <option value="7">7:00pm</option>
+              <option value="8">8:30pm</option>
+              <option value="10">10:00pm</option>
+              <option value="11">11:30pm</option>
+            </select>
+          </div>
+          <div class="custom-control custom-switch">
+            <input class="custom-control-input" type="checkbox" id="senior" name="senior" value=true>
+            <label class="custom-control-label" for="senior">Would you like a senior ticket?</label>
+          </div>
+          <input class="btn btn-primary" type="submit" value="Price of the ticket">
+        </form>
+      </div>
+      <div class="col-lg-6">
+        <div class="result">
+          <h1>Your Ticket!</h1>
+          <h2 id="your-title"></h2>
+          <h3 id="your-time"></h3>
+          <h4 id="your-age"></h4>
+          <h1 id="your-price"></h1>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
